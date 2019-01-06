@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="3">
+  <test name="TestonChrome">
+  	<parameter name="browserName" value="chrome"></parameter>
+    <classes>
+      <class name="testngmultibrowsertest.TestNGMultiBrowserDemo"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test name="TestonFirefox">
+  	<parameter name="browserName" value="firefox"></parameter>
+    <classes>
+      <class name="testngmultibrowsertest.TestNGMultiBrowserDemo"/>
+    </classes>
+  </test> <!-- Test -->
+  
+    <test name="TestonIE">
+  	<parameter name="browserName" value="ie"></parameter>
+    <classes>
+      <class name="testngmultibrowsertest.TestNGMultiBrowserDemo"/>
+    </classes>
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
